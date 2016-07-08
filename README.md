@@ -2,6 +2,8 @@
 
 Overview of my app:
 The app has 3 activities.  When you open the app you are brought to the main activity which has a button that prompts you to add a memo/list. That button takes you to the second activity which prompts you to add a title for your list. From there you are navigated to the third activity. There you can add tasks/items to the list you just created and go back to the Main Activity which will hold all the lists you created. When you click on a specific list in the Main Activity, you will be able to edit the list. The Main Activity also has a checkbox so you could check the list off or you can remove it by holding the item down for a few seconds. You can also remove tasks that you put in on the 3rd activity. I have a checkbox on those items as well but there is a bug because right now it is automatically set to true whenever you create a new item.I didn't have time to find where that was but once I do I can fix it. I also need to make sure if you insert spaces intot he textedits that will show up as errors, I just didn't have enough time. 
+
+Project-1---To-Do-List/screenshots/HomePage2.png
 #### Overview
 
 It's time to create your very first Android app - a to-do list app - that runs on a real Android device!
