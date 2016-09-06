@@ -13,6 +13,7 @@ import java.util.List;
 public class RecyclerViewAdapter2 extends RecyclerView.Adapter<CustomViewHolder2> {
 
     CustomObject customObject;
+    CustomObject2 customObject2;
     List<CustomObject> customObjectList2;
 
     public RecyclerViewAdapter2(List<CustomObject> customObject2){
@@ -50,12 +51,9 @@ public class RecyclerViewAdapter2 extends RecyclerView.Adapter<CustomViewHolder2
 
             @Override
             public void onClick(View view) {
-                if(holder.mcheckbox2.isChecked()){
-                    holder.mcheckbox2.setChecked(true);
-                }
-                else {
-                    holder.mcheckbox2.setChecked(false);
-                }
+                CustomObject2 currentObject = customObject.customObjectList2.get(position);
+                currentObject.setMcheckbox2(!currentObject.getMcheckbox2());
+
             }
         });
 

@@ -40,7 +40,7 @@ public class RecylcerViewAdapter extends RecyclerView.Adapter<CustomViewHolder> 
     @Override
     public void onBindViewHolder(final CustomViewHolder holder, final int position) {
         holder.mtextView1.setText(customObjectList1.get(position).getTextView1());
-       holder.mcheckBox.setChecked(customObjectList1.get(position).getCheckBox());
+      holder.mcheckBox.setChecked(customObjectList1.get(position).getCheckBox());
 
 
         holder.mcheckBox.setOnClickListener(new View.OnClickListener() {
@@ -52,7 +52,7 @@ public class RecylcerViewAdapter extends RecyclerView.Adapter<CustomViewHolder> 
 
             }
         });
-        //holder.mcheckBox.setChecked(customObjectList1.get(position).getCheckBox());
+        holder.mcheckBox.setChecked(customObjectList1.get(position).getCheckBox());
 
         holder.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -68,6 +68,7 @@ public class RecylcerViewAdapter extends RecyclerView.Adapter<CustomViewHolder> 
                 customObjectList1.remove(position);
               //  notifyItemRemoved(position);
                 notifyDataSetChanged();
+
                 return false;
             }
         });

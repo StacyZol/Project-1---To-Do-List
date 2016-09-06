@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -16,6 +17,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
     RecyclerView mRecyclerView;
     Button mButton;
+    StaggeredGridLayoutManager mStaggeredGridLayoutManager;
 
 
     ArrayList<CustomObject> customObjectArrayList2;
@@ -38,7 +40,10 @@ public class MainActivity extends AppCompatActivity {
 
 
         RecylcerViewAdapter adapter = new RecylcerViewAdapter(listsSingleton.getCustomObjectList());
-        mRecyclerView.setAdapter(adapter);
+        mStaggeredGridLayoutManager = new StaggeredGridLayoutManager(3,1);
+        mRecyclerView.setLayoutManager(mStaggeredGridLayoutManager);
+
+       mRecyclerView.setAdapter(adapter);
         adapter.notifyDataSetChanged();
 
 

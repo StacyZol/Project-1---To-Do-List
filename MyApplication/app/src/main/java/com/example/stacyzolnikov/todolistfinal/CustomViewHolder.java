@@ -10,7 +10,7 @@ import android.widget.TextView;
  * Created by stacyzolnikov on 7/6/16.
  */
 public class CustomViewHolder extends RecyclerView.ViewHolder {
-    public TextView mgreenBox;
+    public TextView mTitle;
     public TextView mtextView1;
     public CheckBox mcheckBox;
     public LinearLayout mcard1;
@@ -18,10 +18,10 @@ public class CustomViewHolder extends RecyclerView.ViewHolder {
     public CustomViewHolder(View itemView) {
         super(itemView);
 
-        mgreenBox = (TextView) itemView.findViewById(R.id.greenbox);
-        mtextView1 = (TextView) itemView.findViewById(R.id.textView1);
+       // mTitle= (TextView) itemView.findViewById(R.id.listTitle);
+        mtextView1 = (TextView) itemView.findViewById(R.id.listTitle);
         mcheckBox = (CheckBox) itemView.findViewById(R.id.checkbox);
-        mcard1 = (LinearLayout) itemView.findViewById(R.id.card1);
+       // mcard1 = (LinearLayout) itemView.findViewById(R.id.card1);
 
 
 
