@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         RecylcerViewAdapter adapter = new RecylcerViewAdapter(listsSingleton.getCustomObjectList());
-        mStaggeredGridLayoutManager = new StaggeredGridLayoutManager(3,1);
+        mStaggeredGridLayoutManager = new StaggeredGridLayoutManager(2,1);
         mRecyclerView.setLayoutManager(mStaggeredGridLayoutManager);
 
        mRecyclerView.setAdapter(adapter);
